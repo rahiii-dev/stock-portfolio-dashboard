@@ -141,7 +141,7 @@
   --color-profit: hsl(var(--profit));
   --color-loss: hsl(var(--loss));
   --color-neutral: hsl(var(--neutral));
-  
+
   --color-sidebar: hsl(var(--sidebar-background));
   --color-sidebar-foreground: hsl(var(--sidebar-foreground));
   --color-sidebar-primary: hsl(var(--sidebar-primary));
@@ -160,6 +160,19 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
+
+@utility bg-gradient-primary {
+  background-image: var(--gradient-primary);
+}
+
+@utility bg-gradient-card {
+  background-image: var(--gradient-card);
+}
+
+@utility bg-gradient-surface {
+  background-image: var(--gradient-surface);
+}
+
 
 @layer base {
   * {
